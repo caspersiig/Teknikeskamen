@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<WekiInputHelperFileData>
+  <oscReceivePort>6448</oscReceivePort>
+  <oscSendPort>6449</oscSendPort>
+  <sendHostname>localhost</sendHostname>
+  <sendOscMessage>/wek/inputs</sendOscMessage>
+  <inputs>
+    <oscMessage>/wek/inputs</oscMessage>
+    <numInputs>4</numInputs>
+    <groupName>Inputs</groupName>
+    <inputNames>
+      <string>inputs_1</string>
+      <string>inputs_2</string>
+      <string>inputs_3</string>
+      <string>inputs_4</string>
+    </inputNames>
+  </inputs>
+  <outputs>
+    <outputs class="linked-list">
+      <wekiinputhelper.Modifiers.SecondOrderDifference>
+        <name>inputs_1_2ndOrderDiff</name>
+        <index>0</index>
+      </wekiinputhelper.Modifiers.SecondOrderDifference>
+      <wekiinputhelper.Modifiers.SecondOrderDifference>
+        <name>inputs_2_2ndOrderDiff</name>
+        <index>1</index>
+      </wekiinputhelper.Modifiers.SecondOrderDifference>
+      <wekiinputhelper.Modifiers.SecondOrderDifference>
+        <name>inputs_3_2ndOrderDiff</name>
+        <index>2</index>
+      </wekiinputhelper.Modifiers.SecondOrderDifference>
+      <wekiinputhelper.Modifiers.SecondOrderDifference>
+        <name>inputs_4_2ndOrderDiff</name>
+        <index>3</index>
+      </wekiinputhelper.Modifiers.SecondOrderDifference>
+    </outputs>
+    <numOutputTypes>4</numOutputTypes>
+    <dimensionality>4</dimensionality>
+    <hasDependencies>false</hasDependencies>
+  </outputs>
+  <inputTriggerer class="wekiinputhelper.TriggerOnReceive">
+    <c>
+      <type>NONE</type>
+      <howLong>ONCE</howLong>
+      <index>0</index>
+      <val>0.0</val>
+      <appliesTo>INPUT</appliesTo>
+    </c>
+  </inputTriggerer>
+  <isSendingOriginalInputs>false</isSendingOriginalInputs>
+</WekiInputHelperFileData>
